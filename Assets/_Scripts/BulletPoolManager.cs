@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//https://learn.unity.com/tutorial/introduction-to-object-pooling-2019-3#5ea6e6e0edbc2a001f584398
+
+//Reference: https://learn.unity.com/tutorial/introduction-to-object-pooling-2019-3#5ea6e6e0edbc2a001f584398
 
 // TODO: Bonus - make this class a Singleton!
 
@@ -11,7 +12,7 @@ public class BulletPoolManager : MonoBehaviour
     public GameObject bullet;
     //TODO: create a structure to contain a collection of bullets
     private List<GameObject> bulletPool = new List<GameObject>();
-    public int maxBullets = 20;
+    public int maxBullets = 10;
 
     // Start is called before the first frame update
     void Start()

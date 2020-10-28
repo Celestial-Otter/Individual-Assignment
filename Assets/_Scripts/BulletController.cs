@@ -13,7 +13,6 @@ public class BulletController : MonoBehaviour
 
     void Start()
     {
-        //poolManager.bullet = GameObject.FindGameObjectWithTag("Manager");
         boundary.Top = 2.45f;
     }
 

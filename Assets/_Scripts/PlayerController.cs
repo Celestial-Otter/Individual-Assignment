@@ -125,8 +125,10 @@ public class PlayerController : MonoBehaviour
                 GameObject bullet = poolManager.GetBullet();
                 if(bullet != null)
                 {
+                    //Sets transformation and Rotation
                     bullet.transform.position = bulletSpawn.position;
                     bullet.transform.rotation = Quaternion.identity;
+                    //Sets parent as gameController
                     bullet.transform.parent = gameController.transform;
                     bullet.SetActive(true);
                 }
